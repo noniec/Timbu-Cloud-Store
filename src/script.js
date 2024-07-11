@@ -36,3 +36,15 @@ function setActive(element) {
   tabs.forEach((tab) => tab.classList.remove("active"));
   element.classList.add("active");
 }
+
+document.querySelectorAll(".add-to-cart").forEach((button) => {
+  button.addEventListener("click", function () {
+    window.location.href = "/cart-page.html";
+  });
+});
+
+document
+  .getElementById("checkOutButton")
+  .addEventListener("click", function () {
+    window.location.href = "/checkout.html";
+  });
