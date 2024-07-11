@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timbu Cloud Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b6536d214.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/store.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <nav class="d-flex align-items-center">
+        <h4 class="logo"><a href="#">Wrist.</a></h4>
+        <div class="vertical-line"></div>
+
+        <p><a class="nav-link active" href="#">Products</a></p>
+
+        <form class="md:flex">
+          <input type="search" placeholder="Search" class="Search" value="" />
+        </form>
+
+        <div class="vertical-line"></div>
+
+        <div class="cart-icon">
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <sup class="cart-count">4</sup>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="row">
+          <div class="brand-desc col-md-6">
+            <h1>Explore Our <strong>Luxury Watch</strong> Collection.</h1>
+            <p>
+              Our luxury watches are more than just timepieces, they are
+              statements of sophistication and discerning taste, crafted to your
+              personal satisfaction --
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/Mask group.png"
+              alt="header-image"
+              class="header-image img-fluid"
+            />
+          </div>
+          <div class="feature">
+            <span class="hero-feature"
+              ><i class="fa-solid fa-gear"></i> Precision Engineering</span
+            >
+            <span class="hero-feature"
+              ><i class="fa-regular fa-clock"></i> Timeless Design</span
+            >
+            <span class="hero-feature">
+              <img src="images/watch-Vector.png" alt="" />Swiss-Made
+              Excellence</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <aside class="filter-section">
+          <div class="filter-group">
+            <h5>FILTER BY BRAND</h5>
+            <label class="all"
+              ><input type="checkbox" checked /> All
+              <i class="fa-regular fa-circle-xmark"></i
+            ></label>
+            <label><input type="checkbox" /> Hublot <span>234</span></label>
+            <label
+              ><input type="checkbox" /> Audemars Piguet <span>234</span></label
+            >
+            <label><input type="checkbox" /> Cartier <span>234</span></label>
+            <label><input type="checkbox" /> Casio <span>234</span></label>
+          </div>
+
+          <div class="filter-group">
+            <h5>FILTER BY STYLE</h5>
+            <label class="all"
+              ><input type="checkbox" checked /> All
+              <i class="fa-regular fa-circle-xmark"></i
+            ></label>
+            <label><input type="checkbox" /> Fabric <span>234</span></label>
+            <label><input type="checkbox" /> Silicon <span>234</span></label>
+            <label><input type="checkbox" /> Metal <span>234</span></label>
+            <label><input type="checkbox" /> Leather <span>234</span></label>
+            <label><input type="checkbox" /> Rubber <span>234</span></label>
+          </div>
+        </aside>
+
+        <section class="col collections" id="collections">
+          <h2>Collections</h2>
+          <div class="collection-header">
+            <div class="tabs">
+              <a href="#" class="active" onclick="setActive(this)"
+                >Men’s Watches</a
+              >
+              <a href="#" onclick="setActive(this)">Women’s Watches</a>
+              <a href="#" onclick="setActive(this)">Kid’s Watches</a>
+            </div>
+            <div class="sort">
+              <label for="sorting" class=""></label>
+              <select id="sorting" name="sorting" class="custom-select">
+                <option value="default">Default Sorting</option>
+                <option value="price-low-high">Sort by Popularity</option>
+                <option value="price-high-low">Sort by Average Rating</option>
+                <option value="price-low-high">Sort by Latest</option>
+                <option value="price-high-low">
+                  Sort by Pricing: High to Low
+                </option>
+                <option value="price-low-high">
+                  Sort by Pricing: Low to High
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Hublot.png"
+                  class="img-fluid"
+                  alt="Hublot Chronoscope watch"
+                />
+                <h3>Hublot Chronoscape</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$3,200.07</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Hublot Chronoscape.png"
+                  class="img-fluid mb-2"
+                  alt="Hublot Chronoscape luxury watch"
+                />
+                <h3>Hublot Chronoscape</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$6,800</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Hublot Starpath.png"
+                  class="img-fluid mb-2"
+                  alt="Hublot Starpath watch"
+                />
+                <h3>Hublot Starpath</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$2,400</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Hublot Techframe.png"
+                  class="img-fluid mb-2"
+                  alt="Hublot Techframe watch"
+                />
+                <h3>Hublot Techframe</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$3,700</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Hublot Aerolight.png"
+                  class="img-fluid mb-2"
+                  alt="Hublot Aerolight watch"
+                />
+                <h3>Hublot Aerolight</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$6,800</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Hublot Deepsea.png"
+                  class="img-fluid mb-2"
+                  alt="Hublot Deepsea watch"
+                />
+                <h3>Hublot Deepsea</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$8,600</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Royal Oak.png"
+                  class="img-fluid mb-2"
+                  alt="Royal Oak Offshore watch"
+                />
+                <h3>Royal Oak Offshore</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$32,000</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Jules.png"
+                  class="img-fluid mb-2"
+                  alt="Jules Audemars watch"
+                />
+                <h3>Jules Audemars Tourbillion</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$110,000</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Code.png"
+                  class="img-fluid mb-2"
+                  alt="Code 1159 watch"
+                />
+                <h3>Code 1159</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$25,000</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Millinery.png"
+                  class="img-fluid mb-2"
+                  alt="Millinery watch"
+                />
+                <h3>Millenary</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$48,000</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Royal Oak Concept.png"
+                  class="img-fluid mb-2"
+                  alt="Royal Oak Concept watch"
+                />
+                <h3>Royal Oak Concept</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$65,000</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="product">
+                <img
+                  src="images/Cartier.png"
+                  class="img-fluid mb-2"
+                  alt="Cartier Pasha watch"
+                />
+                <h3>Cartier Pasha Coeur</h3>
+                <button class="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Add to Cart
+                </button>
+                <p class="price">$12,500</p>
+                <p class="rating"><i class="fas fa-star"></i> 4.9</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <ul class="pages">
+              <li><a href="#">&#60;</a></li>
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">...</a></li>
+              <li><a href="#">17</a></li>
+              <li><a href="#">18</a></li>
+              <li><a href="#">&#62;</a></li>
+            </ul>
+            <div class="results-info">Showing 1–30 of 347 results</div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="cta">
+      <div class="cta">
+        <div class="cta-details">
+          <h1>Elevate Your Collection.<br />Explore Watches.</h1>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="right-image">
+          <img src="images/Mask group - footer.png" alt="Watch Image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h4 class="logo"><a href="#">Wrist.</a></h4>
+
+        <hr />
+
+        <div class="row">
+          <div class="col d-flex justify-content-between align-items-center">
+            <p class="trade-mark">Wrist 2024. All rights reserved.</p>
+            <div class="social-icons">
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="src/store.js"></script>
+</html>
