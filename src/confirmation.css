@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  @font-face {
+    font-family: "PP Neue Montreal Book";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PP Neue Montreal Book"),
+      url("ppneuemontreal-book.woff") format("woff");
+  }
+}
+
+nav {
+  background: #21213e;
+  @font-face {
+    font-family: "PP Neue Montreal Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PP Neue Montreal Medium"),
+      url("ppneuemontreal-medium.woff") format("woff");
+  }
+  height: 84px;
+}
+
+nav p {
+  color: #fff;
+  font-family: "PP Neue Montreal";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  height: 17px;
+  margin-right: 1024px;
+}
+
+header i,
+footer i {
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  color: #0b0b28;
+  text-align: center;
+  font-family: "Frank Ruhl Libre";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 32px;
+}
+.logo {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  font-style: normal;
+  margin-left: 80px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo a:hover {
+  opacity: 0.1;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 17px;
+  background-color: rgba(255, 255, 255, 0.14);
+  margin: 0 40px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  color: white;
+  border-radius: 50%;
+  padding-left: 4px;
+  font-size: 12px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #f2f2f9;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 600px;
+  height: 73px;
+  flex-direction: row;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #21213eb7;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.step .icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #21213e28;
+  color: #21213e;
+  font-weight: medium;
+}
+
+.step.active {
+  color: #21213e;
+  font-weight: bold;
+}
+
+.step.active .icon {
+  background-color: #21213e;
+  color: white;
+  font-weight: bold;
+}
+
+.line {
+  width: 64px;
+  height: 2px;
+  background-color: #d0d0db;
+  margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+  .line {
+    display: none;
+  }
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.confirmation a {
+  text-decoration: none;
+  color: white;
+}
+
+.confirmation a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.confirmation p {
+  margin-top: 107px;
+  font-size: 40px;
+}
+.confirmation i {
+  margin-left: 90px;
+}
+.confirmation-btn {
+  background: #0b0b28;
+  box-shadow: 0px 1px 6px 0px rgba(207, 207, 232, 0.2);
+  width: auto;
+  padding: 12px 16px;
+  gap: 197px;
+  color: #fff;
+  margin-top: 41px;
+  margin-bottom: 107px;
+  font-family: "PP Neue Montreal";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.confirmation-btn:hover {
+  background: rgba(207, 207, 232, 0.2);
+  border: none;
+}
+
+.cta {
+  background: url("../images/Vector-footer.png") no-repeat center center,
+    #0b0b28;
+  background-size: auto;
+  height: 461px;
+  position: relative;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/Vector-footer.png") no-repeat center center;
+  background-size: auto;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.right-image {
+  position: absolute;
+  left: 357px;
+  top: 48%;
+  transform: translateY(-50%);
+}
+
+.right-image img {
+  /* object-fit: cover;*/
+  height: 484px;
+  width: 1162px;
+}
+
+.cta .btn {
+  background-color: white;
+  color: black;
+  border: none;
+  width: 121;
+  height: 46px;
+  padding: 12px 24px;
+  margin-top: 32px;
+}
+
+.cta .btn:hover {
+  background-color: white;
+  opacity: 0.1;
+}
+.btn {
+  border-radius: 0%;
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.cta-details h1 {
+  color: #fff;
+  font-family: "Frank Ruhl Libre";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  padding-top: 118px;
+}
+
+.cta-details {
+  margin-left: 80px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0b0b28;
+  height: 241px;
+  color: white;
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-content h4 {
+  padding-bottom: 51px;
+  width: 61px;
+  padding-top: 64px;
+}
+footer .btn {
+  margin-left: 16px;
+  width: 120px;
+}
+
+hr {
+  width: 1310px;
+  opacity: 0.1;
+  margin-left: 80px;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.trade-mark {
+  color: rgba(255, 255, 255, 0.72);
+  font-family: "PP Neue Montreal";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  width: max-content;
+  margin-left: 80px;
+  height: 21px;
+}
+
+.social-icons {
+  margin-right: 119px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  border: 1px solid #007bff;
+  opacity: 0.1;
+}

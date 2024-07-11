@@ -365,6 +365,10 @@ hr {
   color: black;
   border: none;
 }
+
+a {
+  text-decoration: none;
+}
 .order-summary {
   width: 35%;
   border-left: 1px solid #ddd;
