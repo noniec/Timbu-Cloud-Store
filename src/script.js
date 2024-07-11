@@ -48,3 +48,9 @@ document
   .addEventListener("click", function () {
     window.location.href = "/checkout.html";
   });
+
+document
+  .getElementById("placeOrderButton")
+  .addEventListener("click", function () {
+    window.location.href = "/confirmation.html";
+  });
