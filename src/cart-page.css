@@ -368,6 +368,9 @@ p {
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
 svg {
   margin-right: 18px;
 }
