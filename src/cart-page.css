@@ -283,20 +283,66 @@ p {
 }
 
 .order-summary {
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #fafafa;
+  margin-top: 32px;
+  border-left: 1px solid #ddd;
+  padding-left: 24px;
 }
 
+.order {
+  border-bottom: 1px solid #ddd;
+}
 .order-summary h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  color: #0b0b28;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 32px;
 }
 
 .order-summary p {
+  color: rgba(11, 11, 40, 0.8);
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: 5px 0;
+  flex: 1 0 0;
+  margin-bottom: 16px;
+}
+
+.order-summary .sale {
+  color: rgba(11, 11, 40, 0.5);
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-summary .total {
+  color: #0b0b28;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.payment-methods h3 {
+  color: #0b0b28;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 16px;
 }
 
 .checkout-btn {
@@ -308,7 +354,7 @@ p {
   align-items: flex-start;
   gap: 197px;
   color: #fff;
-  margin-top: 30px;
+  margin-bottom: 57px;
   font-family: "PP Neue Montreal";
   font-size: 16px;
   font-style: normal;
@@ -322,10 +368,8 @@ p {
   border: none;
 }
 
-.payment-methods img {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
+svg {
+  margin-right: 18px;
 }
 
 .suggested-items {
